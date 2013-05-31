@@ -9,7 +9,7 @@ Why another one then? Both the boostrap and foundation versions weren't easily s
 
 ## Demo
 
-See it in action [here](#).
+See it in action [here](http://smashingboxes.github.io/splitdropbutton).
 
 ## Usage
 
