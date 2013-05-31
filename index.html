@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Split Drop Button Demo</title>
-  <script type="text/javascript" src="http://raw.github.com/smashingboxes/splitdropbutton/master/splitdropbutton.js">
+  <script type="text/javascript" src="http://raw.github.com/smashingboxes/splitdropbutton/master/splitdropbutton.js"></script>
 </head>
 <body>
   <div id="container">
@@ -15,34 +15,34 @@
   </div>
 
   <style>
-    #conatiner {
-      width: 200px;
-      margin: auto;
-    }
+  #container {
+    width: 300px;
+    margin: auto;
+  }
     
-    .split-btn .spb-toggle {
-      padding:  5px 6px;
-      background: gray;
-      color: black;
-    }
+  .split-btn .spb-toggle {
+    padding:  5px 6px;
+    background: gray;
+    color: black;
+  }
 
-    // it's important to style the links with .split-btn a instead of '.spb-primary a' or
-    // '.spb-secondary a' because those divs have widths based on the length of '.split-btn a'
+  // it's important to style the links with .split-btn a instead of '.spb-primary a' or
+  // '.spb-secondary a' because those divs have widths based on the length of '.split-btn a'
 
-    .split-btn a {
-      padding:  8px;
-      background: black;
-      color: white;
-    }
+  .split-btn a {
+    padding:  8px;
+    background: black;
+    color: white;
+  }
   </style>
   
   <script>
-    $(document).ready(function(){
-      $('.split-btn').splitdropbutton({
-        toggleDivContent: '<i class="icon-reorder"></i>' // optional html content for the clickable toggle div
-      })
-    });
+  $(document).ready(function(){
+    $('.split-btn').splitdropbutton({
+      toggleDivContent: '<i class="icon-reorder"></i>' // optional html content for the clickable toggle div
+    })
+  });
   </script>
 
-  </body>
-  </html>
+</body>
+</html>
