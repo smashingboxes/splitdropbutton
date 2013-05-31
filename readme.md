@@ -52,20 +52,20 @@ Caveat: Since this plugin calculates element widths on page load, if you are usi
 
 #### Stylesheet
 
-.split-btn .spb-toggle {
-  padding:  5px 6px;
-  background: gray;
-  color: black;
-}
+    .split-btn .spb-toggle {
+      padding:  5px 6px;
+      background: gray;
+      color: black;
+    }
 
-// it's important to style the links with .split-btn a instead of '.spb-primary a' or
-// '.spb-secondary a' because those divs have widths based on the length of '.split-btn a'
+    // it's important to style the links with .split-btn a instead of '.spb-primary a' or
+    // '.spb-secondary a' because those divs have widths based on the length of '.split-btn a'
 
-.split-btn a {
-  padding:  8px;
-  background: black;
-  color: white;
-}
+    .split-btn a {
+      padding:  8px;
+      background: black;
+      color: white;
+    }
 
 ## License
 
