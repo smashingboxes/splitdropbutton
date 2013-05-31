@@ -3,6 +3,7 @@
 <head>
   <title>Split Drop Button Demo</title>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
   <script type="text/javascript" src="splitdropbutton.js"></script>
 </head>
 <body>
@@ -16,33 +17,40 @@
   </div>
 
   <style>
-  #container {
-    width: 300px;
-    margin: auto;
-  }
+  
+    #container {
+      width: 200px;
+      margin: 50px auto;
+    }
     
-  .split-btn .spb-toggle {
-    padding:  5px 6px;
-    background: gray;
-    color: black;
-  }
+    .split-btn .spb-toggle {
+      font-size: 24px;
+      padding: 7px 9px;
+      background: #ccc;
+      color: black;
+      cursor: pointer; cursor: hand;
+    }
 
-  // it's important to style the links with .split-btn a instead of '.spb-primary a' or
-  // '.spb-secondary a' because those divs have widths based on the length of '.split-btn a'
-
-  .split-btn a {
-    padding:  8px;
-    background: black;
-    color: white;
-  }
+    .split-btn a {
+      padding: 10px;
+      background: purple;
+      color: white;
+      text-decoration: none;
+      cursor: pointer; cursor: hand;
+    }
+  
+    .split-btn a:hover {
+      background: MediumPurple;
+    }
+  
   </style>
   
-  <script>
-  $(document).ready(function(){
-    $('.split-btn').splitdropbutton({
-      toggleDivContent: '<i class="icon-reorder"></i>' // optional html content for the clickable toggle div
-    })
-  });
+  <script>  
+    $(document).ready(function(){
+      $('.split-btn').splitdropbutton({
+        toggleDivContent: '<i class="icon-reorder"></i>' // optional html content for the clickable toggle div
+      })
+    });
   </script>
 
 </body>
