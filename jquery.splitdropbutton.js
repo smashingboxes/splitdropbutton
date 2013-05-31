@@ -47,7 +47,7 @@
       $children.each(function(index, link) {
         if ($widestLink == null) {
           $widestLink = $(link);
-        } else if ($(link).width() > $widestLink.width()) {
+        } else if ($(link).outerWidth() > $widestLink.outerWidth()) {
           $widestLink = $(link);
         }
       });
@@ -57,8 +57,8 @@
         secondary: $children.slice(1, $children.length)
       };
       
-      this.linkWidth = $widestLink.css('width');
-      this.linkHeight = $(this.links.primary).css('height'); 
+      this.linkWidth = $widestLink.outerWidth() + 'px';
+      this.linkHeight = $(this.links.primary).outerHeight() + 'px'; 
       
       this.$toggleDiv = $('<div class="spb-toggle">').append(settings.toggleDivContent);
       this.$primaryDiv = $('<div class="spb-primary">');
@@ -83,7 +83,8 @@
       this.$toggleDiv.appendTo(this.$el).css({
         'height': this.linkHeight,
         'width': this.linkHeight,
-        'cursor': 'pointer'
+        'cursor': 'pointer',
+        'box-sizing': 'border-box'
       });
       
       this.$primaryDiv.appendTo(this.$el).append(this.links.primary).css({
