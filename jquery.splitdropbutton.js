@@ -84,7 +84,8 @@
         'height': this.linkHeight,
         'width': this.linkHeight,
         'cursor': 'pointer',
-        'box-sizing': 'border-box'
+        'box-sizing': 'border-box',
+        '-moz-box-sizing': 'border-box'
       });
       
       this.$primaryDiv.appendTo(this.$el).append(this.links.primary).css({
@@ -93,7 +94,8 @@
         'width': this.linkWidth,
         'top': '0',
         'right': this.linkHeight,
-        'box-sizing': 'border-box'
+        'box-sizing': 'border-box',
+        '-moz-box-sizing': 'border-box'
       });
         
       this.$secondaryDiv.appendTo(this.$el).append(this.links.secondary).css({
@@ -101,7 +103,8 @@
         'width': this.linkWidth,
         'top': this.linkHeight,
         'right': this.linkHeight,
-        'box-sizing': 'border-box'
+        'box-sizing': 'border-box',
+        '-moz-box-sizing': 'border-box'
       });
       
       this.$secondaryDiv.hide();
